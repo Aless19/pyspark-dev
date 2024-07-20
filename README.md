@@ -49,6 +49,13 @@ El servidor de Jupyter se inicia de manera que no requiere de contraseña y admi
 jupyter-lab --ip=0.0.0.0 --port 8888 --no-browser --notebook-dir=/proyecto --NotebookApp.allow_origin="*" --allow-root --ServerApp.password='' --ServerApp.token='' --ServerApp.password_required=False
 ```
 
+### Errores
+
+En caso de usar linux es posible que el contenedor `master` devuelva un error, en ese caso es posible que sea necesario hacer lo siguiente antes de iniciar el entorno:
+```shell
+chmod +x docker-start.sh
+```
+
 
 ## English
 
@@ -98,4 +105,11 @@ The Jupyter server is started in a way that doesn't require a password and allow
 
 ```bash
 jupyter-lab --ip=0.0.0.0 --port 8888 --no-browser --notebook-dir=/proyecto --NotebookApp.allow_origin="*" --allow-root --ServerApp.password='' --ServerApp.token='' --ServerApp.password_required=False
+```
+
+### Errors
+
+In case of using linux it is possible that the `master` container returns an error, in that case it may be necessary to do the following before starting the environment:
+```shell
+chmod +x docker-start.sh
 ```
